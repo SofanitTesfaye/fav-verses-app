@@ -70,9 +70,9 @@ createdTime: "2021-08-20T01:13:40.000Z"
 | Aug 19 | Proposal Approval                          | Incomplete|
 | Aug 20 | Airtable Setup / README                    | Incomplete|
 | Aug 23 | Component Creation/make it functional      | Incomplete|
-| Aug 24 | CSS Components                             | Incomplete|
-| Aug 25 | CSS Components cont'd.                     | Incomplete|
-| Aug 26 | Advanced CSS                               | Incomplete|
+| Aug 24 | CSS                             | Incomplete|
+| Aug 25 | CSS                     | Incomplete|
+| Aug 26 | Advanced CSS/post mvp                               | Incomplete|
 | Aug 27 | Presentations                              | Incomplete|
 
 ## Timeframes
@@ -99,7 +99,7 @@ createdTime: "2021-08-20T01:13:40.000Z"
 I have a good understanding of what i want my application to look like and what exactly I want it to do. And I also know which labs and excercise I can reference if I get lost along the way.
 
 ### Weaknesses:
-CSS and class copmonents will most likely consume a lots of my time. i'll put more efforts on those areas.
+CSS and react copmonents will most likely consume a lots of my time. i'll put more efforts on those areas.
 ### Opportunities:
 This project will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
 
