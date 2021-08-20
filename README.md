@@ -1,4 +1,4 @@
-# new-testament-verses
+# fav-verses-app
 
 ## Project Description
 
