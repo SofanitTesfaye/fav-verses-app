@@ -104,4 +104,4 @@ CSS and class copmonents will most likely consume a lots of my time. i'll put mo
 This project will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
 
 ### Threats:
-I get frustrated when i stuck with errors or an issue, it makes me not utilize my brain effectively 
+I get frustrated when i'm stuck with errors or an issue, it makes me not utilize my brain effectively 
