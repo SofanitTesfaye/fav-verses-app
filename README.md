@@ -99,7 +99,7 @@ createdTime: "2021-08-20T01:13:40.000Z"
 I have a good understanding of what i want my application to look like and what exactly I want it to do. And I also know which labs and excercise I can reference if I get lost along the way.
 
 ### Weaknesses:
-I spend lots of my time on class components and also CSS, I will likely use most of my time on these matters.
+working on class components and CSS, I will most likely use most of my time on these matters.
 ### Opportunities:
 This project is the culmination of the last 2 weeks and will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
 
