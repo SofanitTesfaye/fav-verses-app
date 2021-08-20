@@ -47,8 +47,7 @@ text: "In the beginning was the Word , and the Word was with God, and the Word w
 },
 createdTime: "2021-08-20T01:13:40.000Z"
 },
-]
-}
+
 
 ```
 
