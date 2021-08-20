@@ -57,11 +57,11 @@ createdTime: "2021-08-20T01:13:40.000Z"
 
 - Home page with clickable icons that route to each respective feed.
 - Get and post new testament verses from Airtable.
-- Use forms to create reviews and update Airtable.
+- Use forms to add new verse and edit Airtable.
 
 #### PostMVP
 
-- Add a search bar to each review page to find reviews via keywords in the title.
+- Add a search bar to find favorite verses via searching by a title of a book in the new testament.
 
 ## Project Schedule
 
@@ -96,9 +96,12 @@ createdTime: "2021-08-20T01:13:40.000Z"
 ## SWOT Analysis
 
 ### Strengths:
+I have a good understanding of what i want my application to look like and what exactly I want it to do. And I also know which labs and excercise I can reference if I get lost along the way.
 
 ### Weaknesses:
-
+I spend lots of my time on class components and also CSS, I will likely use most of my time on these matters.
 ### Opportunities:
+This project is the culmination of the last 2 weeks and will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
 
 ### Threats:
+I get frustrated when i stuck with errors or an issue, it makes me not utilize my brain effectively :)
