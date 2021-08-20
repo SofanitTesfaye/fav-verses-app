@@ -2,7 +2,7 @@
 
 ## Project Description
 
-new-testament-verses is an Airtable and React build where the user is able to get some of the new testament verses.It helps to study and memorize bible verses. It also allows the users to add their favorite verses.
+fav-verses-app is an Airtable and React build where the user is able to get some of the new testament verses.It helps to study and memorize bible verses. It also allows the users to add their favorite verses.
 
 ## Wireframes
 
