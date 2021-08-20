@@ -26,29 +26,27 @@ records: [
 {
 id: "rec7I7nDDbxR7Qk5u",
 fields: {
-verses: "hebrews 8:10",
-text: " For this is the covenant that I will make with the house of Israel after those days, says the Lord: I will imprint My laws upon their minds, even upon their innermost thoughts and understanding, and engrave them upon their hearts; and I will be their God, and they shall be My people."
+description: " For this is the covenant that I will make with the house of Israel after those days, says the Lord: I will imprint My laws upon their minds, even upon their innermost thoughts and understanding, and engrave them upon their hearts; and I will be their God, and they shall be My people.",
+title: "hebrews 8:10"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
 },
 {
 id: "recTdouD7yjBv0lz1",
 fields: {
-verses: "genesis 1:1",
-text: "In the beginning God created the heavens and the earth"
+description: "In the beginning God created the heavens and the earth",
+title: "genesis 1:1"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
 },
 {
 id: "reciuR0h5ZSFGrEAE",
 fields: {
-verses: "john 1:1",
-text: "In the beginning was the Word , and the Word was with God, and the Word was God Himself."
+description: "In the beginning was the Word , and the Word was with God, and the Word was God Himself.",
+title: "john 1:1"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
-},
-
-
+}
 ```
 
 ### MVP/PostMVP
