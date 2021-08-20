@@ -8,11 +8,11 @@ new-testament-verses is an Airtable and React build where the user is able to ge
 
 The wireframes below depict the homepage and review feed for new-testament-verses in window and phone format. The homepage contains a header displaying the app title and three clickable icons - home and verse- that route to each respective review feed. The review feeds contain an input form and add button for review data. 
 
-![Wireframe](https://whimsical.com/new-testament-verse-9fxRrtMcyb7EfP7iEUF59n)
+[Wireframe](https://whimsical.com/new-testament-verse-9fxRrtMcyb7EfP7iEUF59n)
 
 ## Component Hierarchy
 
-![ComponentHierarchy](https://whimsical.com/component-hierarchy-EvJdi4AwU6R9yibsKuyfra)
+[ComponentHierarchy](https://whimsical.com/component-hierarchy-EvJdi4AwU6R9yibsKuyfra)
 
 ## API and Data Sample
 
