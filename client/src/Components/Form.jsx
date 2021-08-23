@@ -24,8 +24,12 @@ function Form(props) {
       title,
       description
     }
+    if (params.id) {
+      await axios.put(`${baseURL}/${params.id}`, { fields: newVerses}, config)
+    } else {
     await axios.post(baseURL, {fields: newVerses }, config)
   }
+}
   return (
     <form onSubmit={handleSubmit}>
       <lable htmlFor='title'>Title: </lable>
