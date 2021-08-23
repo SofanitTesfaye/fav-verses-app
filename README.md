@@ -26,29 +26,27 @@ records: [
 {
 id: "rec7I7nDDbxR7Qk5u",
 fields: {
-verses: "hebrews 8:10",
-text: " For this is the covenant that I will make with the house of Israel after those days, says the Lord: I will imprint My laws upon their minds, even upon their innermost thoughts and understanding, and engrave them upon their hearts; and I will be their God, and they shall be My people."
+description: " For this is the covenant that I will make with the house of Israel after those days, says the Lord: I will imprint My laws upon their minds, even upon their innermost thoughts and understanding, and engrave them upon their hearts; and I will be their God, and they shall be My people.",
+title: "hebrews 8:10"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
 },
 {
 id: "recTdouD7yjBv0lz1",
 fields: {
-verses: "genesis 1:1",
-text: "In the beginning God created the heavens and the earth"
+description: "In the beginning God created the heavens and the earth",
+title: "genesis 1:1"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
 },
 {
 id: "reciuR0h5ZSFGrEAE",
 fields: {
-verses: "john 1:1",
-text: "In the beginning was the Word , and the Word was with God, and the Word was God Himself."
+description: "In the beginning was the Word , and the Word was with God, and the Word was God Himself.",
+title: "john 1:1"
 },
 createdTime: "2021-08-20T01:13:40.000Z"
-},
-
-
+}
 ```
 
 ### MVP/PostMVP
@@ -70,9 +68,9 @@ createdTime: "2021-08-20T01:13:40.000Z"
 | Aug 19 | Proposal Approval                          | Incomplete|
 | Aug 20 | Airtable Setup / README                    | Incomplete|
 | Aug 23 | Component Creation/make it functional      | Incomplete|
-| Aug 24 | CSS Components                             | Incomplete|
-| Aug 25 | CSS Components cont'd.                     | Incomplete|
-| Aug 26 | Advanced CSS                               | Incomplete|
+| Aug 24 | CSS                             | Incomplete|
+| Aug 25 | CSS                     | Incomplete|
+| Aug 26 | Advanced CSS/post mvp                               | Incomplete|
 | Aug 27 | Presentations                              | Incomplete|
 
 ## Timeframes
@@ -99,7 +97,7 @@ createdTime: "2021-08-20T01:13:40.000Z"
 I have a good understanding of what i want my application to look like and what exactly I want it to do. And I also know which labs and excercise I can reference if I get lost along the way.
 
 ### Weaknesses:
-CSS and class copmonents will most likely consume a lots of my time. i'll put more efforts on those areas.
+CSS and react copmonents will most likely consume a lots of my time. i'll put more efforts on those areas.
 ### Opportunities:
 This project will give me an opportunity to solidify my understanding of react. I also happen to be interested in the function of my app given my interests, so I am motivated to make it look usable and attractive.
 
