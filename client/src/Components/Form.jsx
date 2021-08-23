@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { baseURL, config } from '../services'
 import { useParams } from 'react-router-dom'
@@ -7,6 +7,16 @@ function Form(props) {
   const [description, setDescription] = useState('')
 
   const params = useParams()
+
+  useEffect(() => {
+    if (params.id && props.verses.length > 0) {
+      const versesToEdit = props.verses.find(verses => params.id === verses.id)
+      if (versesToEdit) {
+        setTitle(versesToEdit.fields.title)
+        setDescription(versesToEdit.fields.description)
+      }
+  }
+}, [params.id, props.verses])
 
   const handleSubmit = async (event) => {
     event.preventDefault()
