@@ -5,7 +5,8 @@ import Form from "./Components/Form";
 import Verses from "./Components/Verses";
 import "./App.css";
 import { baseURL, config } from "./services";
-
+import Home from './Components/Home'
+import Nav from './Components/Nav'
 
 function App() {
   const [verses, setVerses] = useState([]);
@@ -20,13 +21,13 @@ function App() {
   return (
     <>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/verses">Verses</Link>
-        <Link to="/new">Add</Link>
+        <Nav />
       </nav>
+      
       <Route path="/" exact>
-        <h1>home</h1>
+        <Home />
       </Route>
+
       <Route path="/verses">
         {verses.map((verses, index) => {
           return (
@@ -34,9 +35,11 @@ function App() {
           );
         })}
       </Route>
+
       <Route path="/new">
         <Form />
       </Route>
+      
       <Route path="/edit/:id">
         <Form verses={verses} />
       </Route>

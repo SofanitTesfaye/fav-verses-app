@@ -1,6 +1,6 @@
-export const baseURL = `https://api.airtable.com/v0/appi7CzTJmDhI0yP2/verses`
+export const baseURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_APP}/verses`;
 export const config = {
   headers: {
-    Authorization: `Bearer keyCHqjhBiDexbXsX`
-  }
-}
+    Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`,
+  },
+};
