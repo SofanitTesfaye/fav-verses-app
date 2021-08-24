@@ -1,5 +1,5 @@
 # favorite-bible-verses
-[Netlify](https://fav-verse.netlify.app/)
+[Netlify](https://fav-verses-app.netlify.app/)
 
 ## Project Description
 
