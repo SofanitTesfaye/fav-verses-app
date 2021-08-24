@@ -16,20 +16,40 @@
 
 .card {
   color: rgb(245, 85, 27);
-  font-family: "Besley", serif;
+  font-family: "Oswald", sans-serif;
   background-color: rgb(252, 247, 247);
+  opacity: 2;
   height: 180px;
   width: 400px;
-  margin: 100px 20px 20px 200px;
-  padding: 20px 20px 20px 20px;
+  margin: 100px 20px 20px 400px;
+  padding: 30px 30px 30px 30px;
 }
 .reabMeButton {
-  font-size: 20px;
-  margin: 0px 0px 0px 260px;
+  font-size: 17px;
+  margin: 10px 0px 0px 260px;
   background-color: rgb(233, 89, 36);
   border: none;
   border-radius: 3px;
+  color: white;
 }
 .navbar {
-  display: flex;
+  margin: 20px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.versesBox {
+  background-color: orange;
+  margin: 0px 70px 0px 70px;
+}
+.title {
+  text-align: center;
+}
+.description {
+  text-align: center;
+}
+.editBox {
+  margin: 0px 0px 0px 900px;
 }

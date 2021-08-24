@@ -45,7 +45,7 @@ function Form(props) {
         onChange={(e) => setDescription(e.target.value)}
         value={description}
       />
-      <button type='submit'>Add</button>
+      <button type='submit'>Update</button>
    </form>
   )
 }

@@ -5,14 +5,14 @@ function Verses(props) {
   const { title, description } = props.verses.fields;
   return (
     <>
-      <nav>
-        <Link to="/new">Add</Link>
-      </nav>
-     
-    <article>
-    <h3>{title}</h3>
-    <p>{description}</p>
+      <article>
+     <div className="versesBox">  
+    <h3 className="title">{title}</h3>
+    <p className="description">{description}</p>
+        </div>
+        <div className="editBox">
     <Link to={`/edit/${props.verses.id}`}>Edit</Link>
+    </div>
       </article>
       </>
   )

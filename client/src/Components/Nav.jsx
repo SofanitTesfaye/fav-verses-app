@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 function Nav() {
   return (
     <nav className="navbar">
-      <Link to="/">Home</Link>
+      <div>
+        <Link to="/" style={{margin:50}} >Home </Link>
       
-        <Link to="/verses">Verses</Link>
-      </nav>
-  )
+        <Link to="/verses"> Verses</Link>
+      </div>
+    </nav>
+  );
 }
-export default Nav
+export default Nav;
