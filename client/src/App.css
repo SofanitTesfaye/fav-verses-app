@@ -35,21 +35,43 @@
 .navbar {
   margin: 20px;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding:40px;
+  border:5px brown;
+  width: 100%;
+}
+.box1 {
+  flex: 10;
+}
+
+.box2 {
+  flex: 1;
+}
 
 .title {
   font-weight: bold;
   font-size: 20px;
 }
+
 .versesBox {
-  background-color: orange;
-  margin: 0px 70px 0px 70px;
+  background-color: #f2a85972;
+  box-sizing: border-box;
+  margin: 0px 250px 0px 20px;
 }
+
 .title {
   text-align: center;
 }
 .description {
   text-align: center;
 }
-.editBox {
-  margin: 0px 0px 0px 900px;
+
+.titleVerse {
+  text-align: center;
+  margin: 0px 50px 0px 50px;
+  font-weight: bold;
+
 }

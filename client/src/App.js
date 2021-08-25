@@ -23,23 +23,24 @@ function App() {
       <nav>
         <Nav />
       </nav>
-      <br />
-      <div className="title">
-        New Testament
-        <Link style={{margin: 400}} to="/new">
-          Add New Verse
-        </Link>
-      </div>
-      <br />
-      <br />
+      
+
       <Route path="/" exact>
         <Home />
       </Route>
-
+      <br />
+      <br />
+     
       <Route path="/verses">
+      <div className="titleVerse">
+        New Testament
+        <Link style={{margin: 200}} to="/new">Add New Verse</Link>
+        </div>
+        <br />
         {verses.map((verses, index) => {
           return <Verses key={index} verses={verses} />;
         })}
+         
       </Route>
 
       <Route path="/new">
