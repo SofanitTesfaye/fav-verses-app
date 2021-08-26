@@ -1,52 +1,73 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-import { baseURL, config } from '../services'
-import { useParams } from 'react-router-dom'
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { baseURL, config } from "../services";
+import { useParams } from "react-router-dom";
 function Form(props) {
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
-  const params = useParams()
+  const params = useParams();
 
   useEffect(() => {
     if (params.id && props.verses.length > 0) {
-      const versesToEdit = props.verses.find(verses => params.id === verses.id)
+      const versesToEdit = props.verses.find(
+        (verses) => params.id === verses.id
+      );
       if (versesToEdit) {
-        setTitle(versesToEdit.fields.title)
-        setDescription(versesToEdit.fields.description)
+        setTitle(versesToEdit.fields.title);
+        setDescription(versesToEdit.fields.description);
       }
-  }
-}, [params.id, props.verses])
+    }
+  }, [params.id, props.verses]);
 
   const handleSubmit = async (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const newVerses = {
       title,
-      description
-    }
+      description,
+    };
     if (params.id) {
-      await axios.put(`${baseURL}/${params.id}`, { fields: newVerses}, config)
+      await axios.put(`${baseURL}/${params.id}`, { fields: newVerses }, config);
     } else {
-    await axios.post(baseURL, {fields: newVerses }, config)
-  }
-}
+      await axios.post(baseURL, { fields: newVerses }, config);
+    }
+  };
   return (
+ 
     <form onSubmit={handleSubmit}>
-      <lable htmlFor='title'>Title: </lable>
-      <input
-        id='title'
-        type='text'
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
-      />
-      <lable htmlFor='description'>Description: </lable>
-      <textarea
-        id='description'
-        onChange={(e) => setDescription(e.target.value)}
-        value={description}
-      />
-      <button type='submit'>Update</button>
-   </form>
-  )
+      <div className="formTitle">
+        <lable htmlFor="title">Title </lable>
+      </div>
+      <br />
+      <div className="formInput">
+        <input
+          className="one"
+          id="title"
+          type="text"
+          onChange={(e) => setTitle(e.target.value)}
+          value={title} 
+        />
+      </div>
+
+      <br />
+      <div className="formDescription">
+        <lable htmlFor="description">Description </lable>
+      </div>
+      <br />
+      <div className="textDescription">
+        <textarea
+          className="two"
+          id="description"
+          onChange={(e) => setDescription(e.target.value)}
+          value={description}
+        />
+      </div>
+      <br />
+      <div className="formBtn">
+        <button className="btnTwo" type="submit">Add</button>
+      </div>
+      </form>
+   
+  );
 }
-export default Form
+export default Form;

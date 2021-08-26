@@ -12,7 +12,7 @@ function Verses(props) {
             </div>
           </div>
           <div className="box2">
-            <button style={{ backgroundColor: "brown" }}>
+            <button className="btn" >
               <Link to={`/edit/${props.verses.id}`}>Edit</Link>
             </button>
           </div>
