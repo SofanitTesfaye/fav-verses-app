@@ -1,23 +1,22 @@
 import { Route, Link } from "react-router-dom";
-import Form from "./Form";
+import Form from "./AddForm";
 
 function Verses(props) {
   const { title, description } = props.verses.fields;
-  return ( 
-        <div class="container">
-          <div className="box1">
-            <div className="versesBox">
-              <h3 className="title">{title}</h3>
-              <p className="description">{description}</p>
-            </div>
-          </div>
-          <div className="box2">
-            <button className="btn" >
-              <Link to={`/edit/${props.verses.id}`}>Edit</Link>
-            </button>
-          </div>
+  return (
+    <div class="container">
+      <div className="box1">
+        <div className="versesBox">
+          <h3 className="title">{title}</h3>
+          <p className="description">{description}</p>
         </div>
-  
+      </div>
+      <div className="box2">
+        <Link to={`/edit/${props.verses.id}`}>
+          <button className="btn">Edit</button>
+        </Link>
+      </div>
+    </div>
   );
 }
 export default Verses;

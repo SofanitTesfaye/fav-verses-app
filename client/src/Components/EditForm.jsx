@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { baseURL, config } from "../services";
 import { useParams } from "react-router-dom";
-function Form(props) {
+function EditForm(props) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
@@ -28,15 +28,17 @@ function Form(props) {
     };
     if (params.id) {
       await axios.put(`${baseURL}/${params.id}`, { fields: newVerses }, config);
-    } else {
-      await axios.post(baseURL, { fields: newVerses }, config);
     }
+    props.setToggle((prevState) => !prevState);
   };
+
   return (
- 
     <form onSubmit={handleSubmit}>
+      <h2 className="editVerse" >Edit this verse</h2>
       <div className="formTitle">
-        <lable htmlFor="title">Title </lable>
+        <lable className="titleTwo" htmlFor="title">
+          Title{" "}
+        </lable>
       </div>
       <br />
       <div className="formInput">
@@ -45,13 +47,15 @@ function Form(props) {
           id="title"
           type="text"
           onChange={(e) => setTitle(e.target.value)}
-          value={title} 
+          value={title}
         />
       </div>
 
       <br />
       <div className="formDescription">
-        <lable htmlFor="description">Description </lable>
+        <lable className="titleThree" htmlFor="description">
+          Description{" "}
+        </lable>
       </div>
       <br />
       <div className="textDescription">
@@ -64,10 +68,11 @@ function Form(props) {
       </div>
       <br />
       <div className="formBtn">
-        <button className="btnTwo" type="submit">Add</button>
+        <button className="btnTwo" type="submit">
+          Update
+        </button>
       </div>
-      </form>
-   
+    </form>
   );
 }
-export default Form;
+export default EditForm;

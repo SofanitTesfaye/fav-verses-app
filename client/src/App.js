@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
-import Form from "./Components/Form";
+import AddForm from "./Components/AddForm";
+import EditForm from "./Components/EditForm"
 import Verses from "./Components/Verses";
 import "./App.css";
 import { baseURL, config } from "./services";
@@ -10,6 +11,8 @@ import Nav from "./Components/Nav";
 
 function App() {
   const [verses, setVerses] = useState([]);
+  const [toggle, setToggle] = useState(false);
+
   useEffect(() => {
     const fetchVerses = async () => {
       const resp = await axios.get(baseURL, config);
@@ -17,7 +20,7 @@ function App() {
       setVerses(resp.data.records);
     };
     fetchVerses();
-  }, []);
+  }, [toggle]);
   return (
     <>
       <nav>
@@ -44,11 +47,11 @@ function App() {
       </Route>
 
       <Route path="/new">
-        <Form />
+        <AddForm setToggle={setToggle} />
       </Route>
 
       <Route path="/edit/:id">
-        <Form verses={verses} />
+        <EditForm verses={verses} setToggle={setToggle} />
       </Route>
     </>
   );
