@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 import AddForm from "./Components/AddForm";
-import EditForm from "./Components/EditForm"
+import EditForm from "./Components/EditForm";
 import Verses from "./Components/Verses";
 import "./App.css";
 import { baseURL, config } from "./services";
@@ -27,24 +27,24 @@ function App() {
       <nav>
         <Nav />
       </nav>
-      
 
       <Route path="/" exact>
         <Home />
       </Route>
       <br />
       <br />
-     
+
       <Route path="/verses">
-      <div className="titleVerse">
-        New Testament
-        <Link style={{margin: 200}} to="/new">Add New Verse</Link>
+        <div className="titleVerse">New Testament</div>
+        <div className="addnew">
+          <Link style={{ margin: 200 }} to="/new">
+            Add New Verse
+          </Link>
         </div>
         <br />
         {verses.map((verses, index) => {
           return <Verses key={index} verses={verses} />;
         })}
-         
       </Route>
 
       <Route path="/new">
