@@ -1,9 +1,9 @@
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Verses(props) {
   const { title, description } = props.verses.fields;
   return (
-    <div class="container">
+    <div className="container">
       <div className="box1">
         <div className="versesBox">
           <h3 className="title">{title}</h3>
@@ -11,7 +11,7 @@ function Verses(props) {
         </div>
       </div>
       <div className="box1">
-        <Link to={`/edit/${props.verses.id}`}>
+        <Link className="edit-link" to={`/edit/${props.verses.id}`}>
           <button className="btn">Edit</button>
         </Link>
       </div>
