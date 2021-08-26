@@ -5,7 +5,7 @@ function Home() {
     <body>
       <section>
         <div className="card">
-          <h3>FAVORITE BIBLE VERSES</h3>
+          <h2>FAVORITE BIBLE VERSES</h2>
           <h5>
             DO YOU WANT TO EXPAND YOUR BIBLE KNOWLEDGE? HERE IS THE APP WHICH
             WILL HELP YOU MEMORIZE YOUR FAVORITE BIBLE VERSES!

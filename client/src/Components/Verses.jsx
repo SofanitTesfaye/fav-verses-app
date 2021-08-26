@@ -10,7 +10,7 @@ function Verses(props) {
           <p className="description">{description}</p>
         </div>
       </div>
-      <div className="box2">
+      <div className="box1">
         <Link to={`/edit/${props.verses.id}`}>
           <button className="btn">Edit</button>
         </Link>
