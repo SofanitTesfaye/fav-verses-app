@@ -1,10 +1,9 @@
-import { Link, Route } from "react-router-dom";
-import Verses from "./Verses";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="body" style={{ backgroundImage: "URL('https://i.imgur.com/61lqY0J.jpg')" }} >
+    <body>
+      <section>
         <div className="card">
           <h3>FAVORITE BIBLE VERSES</h3>
           <h5>
@@ -16,8 +15,10 @@ function Home() {
         </Link>
             
         </div>
-      </div>
-    </div>
+      </section>
+
+    </body>
   );
 }
+
 export default Home;

@@ -1,5 +1,4 @@
-import { Route, Link } from "react-router-dom";
-import Form from "./AddForm";
+import {  Link } from "react-router-dom";
 
 function Verses(props) {
   const { title, description } = props.verses.fields;

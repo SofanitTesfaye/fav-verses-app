@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Route, Link } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive';
 import AddForm from "./Components/AddForm";
 import EditForm from "./Components/EditForm"
 import Verses from "./Components/Verses";
