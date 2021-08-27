@@ -18,6 +18,10 @@ body {
   padding-top: 100px;
   padding-left: 130px;
 }
+.addnew{
+  float: right;
+  padding: 0px 350px 10px 10px;
+}
 .container {
   display: flex;
   align-items: center;
@@ -167,7 +171,11 @@ body {
   }
   .addnew {
     padding: 4px 0px 47px 0px;
+    
   }
+  element.style {
+    margin: 51px;
+}
 }
 
 @media screen and (min-width: 480px) {

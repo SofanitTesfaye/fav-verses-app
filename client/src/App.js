@@ -35,12 +35,14 @@ function App() {
       <br />
 
       <Route path="/verses">
-        <div className="titleVerse">New Testament</div>
-        <div className="addnew">
+
+      <div className="addnew">
           <Link style={{ margin: 200 }} to="/new">
             Add New Verse
           </Link>
         </div>
+        <div className="titleVerse">New Testament</div>
+        
         <br />
         {verses.map((verses, index) => {
           return <Verses key={index} verses={verses} />;
