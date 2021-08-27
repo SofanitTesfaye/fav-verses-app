@@ -18,7 +18,7 @@ body {
   padding-top: 100px;
   padding-left: 130px;
 }
-.addnew{
+.addnew {
   float: right;
   padding: 0px 350px 10px 10px;
 }
@@ -99,7 +99,7 @@ body {
   background-color: brown;
   padding: 5px 30px 5px 30px;
   border-radius: 5px;
-  margin: 10px 0px 20px -5px;
+  margin: 80px 0px 20px -5px;
 }
 .btnTwo {
   border: none;
@@ -171,11 +171,26 @@ body {
   }
   .addnew {
     padding: 4px 0px 47px 0px;
-    
   }
   element.style {
     margin: 51px;
-}
+  }
+  .btn {
+    border: none;
+    text-decoration: none;
+    background-color: brown;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    margin: 81px 0px 20px -5px;
+  }
+  .btnTwo {
+    border: none;
+    text-decoration: none;
+    background-color: brown;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    margin: 81px 0px 20px -5px;
+  }
 }
 
 @media screen and (min-width: 480px) {
